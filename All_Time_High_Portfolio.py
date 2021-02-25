@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 
 def all_time_high(shrape_look_back_period,freq_day):
     
-    df=pd.read_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Short_Sell\historical_price_feb_2021.csv", index_col=0)
+    df=pd.read_csv(r"##################.csv", index_col=0)
     df=df.replace(np.nan,0)
 
     print(df)
