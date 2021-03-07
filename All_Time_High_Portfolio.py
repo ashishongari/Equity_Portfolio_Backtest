@@ -37,8 +37,10 @@ def all_time_high(shrape_look_back_period,freq_day):
 
     print(ticker_list)
     print(f"number of stocks is {len(ticker_list)}")
-
+    
+    #start date
     start = datetime.datetime(2007, 1, 1)
+    #end date
     end = datetime.datetime(2021, 2, 24)
 
     close_price = web.DataReader(ticker_list, 'yahoo', start, end)['Adj Close']
