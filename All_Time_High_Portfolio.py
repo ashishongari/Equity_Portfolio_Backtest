@@ -18,8 +18,6 @@ from datetime import datetime, timedelta
 import datetime
 
 def all_time_high(shrape_look_back_period,freq_day):
-    
-    # df=pd.read_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Short_Sell\equity_data.csv", index_col=0)
 
     prices = get_price_list(dt=date(2021,2,18))
     prices =prices.loc[prices['SERIES'] == 'EQ']
