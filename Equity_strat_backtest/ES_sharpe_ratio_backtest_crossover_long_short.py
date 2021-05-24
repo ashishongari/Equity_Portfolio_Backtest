@@ -17,7 +17,7 @@ from datetime import datetime, timedelta
 
 def sharpe_ratio(sharpe_day, crossover_day, rebalance_day):
     
-    df=pd.read_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Short_Sell\F&O_data_2020_oct.csv", index_col=0)
+    df=pd.read_csv()
     # print(df)
 ###############################################################################################################################
     #PARAMETERS
@@ -373,9 +373,6 @@ def sharpe_ratio(sharpe_day, crossover_day, rebalance_day):
     plt.legend()
     plt.show()
 
-    # absolute_return.to_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Equity_Strategy_Backtest\sharpe_200_crossover_150.csv")
-
-    return 
 
 sharpe_ratio(100, 100, 21)
 
