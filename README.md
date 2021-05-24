@@ -1,2 +1,2 @@
 # Equity_Portfolio_Backtest
-THE folder contains Indian equity 
+Backtesting varoius stratgies on Indian equities using quantitative methods 
