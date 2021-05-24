@@ -29,8 +29,6 @@ def sharpe_ratio(day, frequency):
     """
 
     df=pd.read_csv()
-    # df=pd.read_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Short_Sell\stock_data_F&O.csv", index_col=0)
-
     df_pct=df.pct_change()
     df_pct_sum=df_pct.rolling(window=day).sum()
     df_std=df_pct.rolling(window=day).std()
