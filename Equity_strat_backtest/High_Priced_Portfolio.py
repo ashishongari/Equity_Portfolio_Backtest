@@ -19,8 +19,7 @@ from datetime import datetime, timedelta
 
 def high_priced(freq_day):
     
-    df=pd.read_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Short_Sell\hp_feb_2021_100cr.csv", index_col=0)
-    df=df.replace(np.nan, 0)
+    df=pd.read_csv()
 
     date_set=df.index
     # print(date_data)
@@ -240,8 +239,6 @@ def high_priced(freq_day):
     plt.title("DRAWDOWN")
     plt.legend()
     plt.show()
-
-    
 
     
 high_priced(50)
