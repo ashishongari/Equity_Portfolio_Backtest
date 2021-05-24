@@ -29,9 +29,7 @@ def sharpe_ratio(day):
     Define a universe of stock, calculate moving sharpe ratio
     """
 
-    df=pd.read_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Short_Sell\F&O_data_2020_oct.csv", index_col=0)
-    # df=pd.read_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Short_Sell\stock_data_F&O.csv", index_col=0)
-
+    df=pd.read_csv()
     df_pct=df.pct_change()
     df_pct_sum=df_pct.rolling(window=day).sum()
     df_std=df_pct.rolling(window=day).std()
@@ -274,9 +272,5 @@ def sharpe_ratio(day):
     plt.title("DRAWDOWN")
     plt.legend()
     plt.show()
-
-    # absolute_return.to_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Equity_Strategy_Backtest\sharpe_200_crossover_150.csv")
-
-    return 
 
 sharpe_ratio(252)
