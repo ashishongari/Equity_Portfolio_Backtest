@@ -18,7 +18,7 @@ from datetime import datetime, timedelta
 
 def moving_sharpe_ratio_backtest(sharpe_day, crossover_day, trading_day):
     
-    df=pd.read_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Short_Sell\hp_feb_2021_100cr.csv", index_col=0)
+    df=pd.read_csv()
 
 ###############################################################################################################################
     #PARAMETERS
@@ -330,10 +330,6 @@ def moving_sharpe_ratio_backtest(sharpe_day, crossover_day, trading_day):
 
     print(buy_list_df.iloc[-1])
 
-    # buy_list_df.to_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Equity_Strategy_Backtest\buy_list_df_nihit.csv")
-    # absolute_return.to_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Equity_Strategy_Backtest\absolute_return_nihit.csv")
-    # price_list_df_entry.to_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Equity_Strategy_Backtest\price_list_df_entry_nihit.csv")
-    # price_list_df_exit.to_csv(r"C:\Users\DeepakShenoy\Desktop\Quantitative Research\Equity_Strategy_Backtest\price_list_df_exit_nihit.csv")
 
 moving_sharpe_ratio_backtest(200,30,15)
 # moving_sharpe_ratio_backtest(sharpe_day, crossover_day, trading_day)
